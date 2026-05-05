@@ -68,7 +68,7 @@ ul {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--color-primary);
     letter-spacing: -0.5px;
@@ -81,7 +81,7 @@ ul {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .nav-links a:not(.btn) {
@@ -105,6 +105,7 @@ ul {
 }
 
 @keyframes float {
+
     0%,
     100% {
         transform: translateY(0);
@@ -264,7 +265,7 @@ ul {
 
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 10px 20px;
     border-radius: var(--border-radius);
     font-weight: 600;
     text-align: center;
@@ -272,7 +273,8 @@ ul {
     transition: all var(--transition-speed);
     border: none;
     font-family: var(--font-main);
-    font-size: 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -387,6 +389,19 @@ ul {
 }
 
 @media (min-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+
     .hero-container {
         flex-direction: row;
         align-items: center;
