@@ -3,8 +3,14 @@
 }
 
 body {
-    display: flex;
+    display: block;
     min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+    }
 }
 
 
@@ -336,7 +342,11 @@ body {
 
     .ds-content {
         margin-left: 0;
-        padding: 24px 20px;
-        align-items: stretch;
+        padding: 40px 20px;
+        display: block;
+    }
+
+    .ds-section, .ds-header {
+        max-width: 100%;
     }
 }
