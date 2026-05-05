@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design System de TravelPlus — documentación de tokens, componentes y patrones.">
+    <title>Design System | TravelPlus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/design-system.css">
+</head>
+
+<body>
+    <aside class="ds-sidebar">
+        <div class="ds-sidebar-brand">Travel<span>Plus</span> DS</div>
+
+        <span class="ds-nav-label">Foundations</span>
+        <a href="#colors" class="ds-nav-link">Colors</a>
+        <a href="#typography" class="ds-nav-link">Typography</a>
+        <a href="#spacing" class="ds-nav-link">Spacing</a>
+        <a href="#radius" class="ds-nav-link">Border Radius</a>
+
+        <span class="ds-nav-label">Components</span>
+        <a href="#buttons" class="ds-nav-link">Buttons</a>
+        <a href="#inputs" class="ds-nav-link">Form Inputs</a>
+        <a href="#cards" class="ds-nav-link">Cards</a>
+        <a href="#badges" class="ds-nav-link">Badges</a>
+    </aside>
+
+    <main class="ds-content">
+        <header class="ds-header">
+            <h1>Design <span>System</span></h1>
+            <p>Referencia visual de todos los tokens, componentes y patrones utilizados en TravelPlus.</p>
+        </header>
+
+        <section class="ds-section" id="colors">
+            <h2 class="ds-section-title">Colors</h2>
+            <p class="ds-section-subtitle">Paleta de colores definida en <code>:root</code>. Todas las propiedades usan variables CSS.</p>
+
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-primary);"></div>
+                    <span class="color-name">Primary</span>
+                    <span class="color-var">--color-primary</span>
+                    <span class="color-hex">#f38f98</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-secondary);"></div>
+                    <span class="color-name">Secondary</span>
+                    <span class="color-var">--color-secondary</span>
+                    <span class="color-hex">#f83f6d</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-text-main);"></div>
+                    <span class="color-name">Text Main</span>
+                    <span class="color-var">--color-text-main</span>
+                    <span class="color-hex">#1e293b</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-text-light);"></div>
+                    <span class="color-name">Text Light</span>
+                    <span class="color-var">--color-text-light</span>
+                    <span class="color-hex">#64748b</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-bg-light); border: 1px solid #e2e8f0;"></div>
+                    <span class="color-name">Background Light</span>
+                    <span class="color-var">--color-bg-light</span>
+                    <span class="color-hex">#f8fafc</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-bg-white); border: 1px solid #e2e8f0;"></div>
+                    <span class="color-name">Background White</span>
+                    <span class="color-var">--color-bg-white</span>
+                    <span class="color-hex">#ffffff</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-hero-bg);"></div>
+                    <span class="color-name">Hero Background</span>
+                    <span class="color-var">--color-hero-bg</span>
+                    <span class="color-hex">#fff5f5</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-error);"></div>
+                    <span class="color-name">Error</span>
+                    <span class="color-var">--color-error</span>
+                    <span class="color-hex">#ef4444</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-preview" style="background: var(--color-success);"></div>
+                    <span class="color-name">Success</span>
+                    <span class="color-var">--color-success</span>
+                    <span class="color-hex">#10b981</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" id="typography">
+            <h2 class="ds-section-title">Typography</h2>
+            <p class="ds-section-subtitle">Fuente principal: <code>Inter</code>. Escala tipográfica utilizada en el proyecto.</p>
+
+            <div class="type-stack">
+                <div class="type-row">
+                    <span class="type-meta">4rem / 800</span>
+                    <span style="font-size:4rem; font-weight:800; letter-spacing:-1px; line-height:1;">Heading 1</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-meta">2.8rem / 800</span>
+                    <span style="font-size:2.8rem; font-weight:800; letter-spacing:-1px;">Heading 2</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-meta">1.5rem / 700</span>
+                    <span style="font-size:1.5rem; font-weight:700;">Heading 3</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-meta">1.15rem / 400</span>
+                    <span style="font-size:1.15rem; color:var(--color-text-light);">Body text — Descripción de sección o párrafo estándar.</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-meta">0.85rem / 600</span>
+                    <span style="font-size:0.85rem; font-weight:600;">Label / Badge text</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-meta">0.8rem / 500</span>
+                    <span style="font-size:0.8rem; font-weight:500; color:var(--color-error);">Error message text</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" id="spacing">
+            <h2 class="ds-section-title">Spacing</h2>
+            <p class="ds-section-subtitle">Sistema de espaciado basado en <code>--spacing: 1rem</code> como unidad base.</p>
+
+            <div class="spacing-grid">
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:8px; height:8px;"></div>
+                    <span class="spacing-label">0.5x<br>8px</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:16px; height:16px;"></div>
+                    <span class="spacing-label">1x<br>16px</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:24px; height:24px;"></div>
+                    <span class="spacing-label">1.5x<br>24px</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:32px; height:32px;"></div>
+                    <span class="spacing-label">2x<br>32px</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:48px; height:48px;"></div>
+                    <span class="spacing-label">3x<br>48px</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:64px; height:64px;"></div>
+                    <span class="spacing-label">4x<br>64px</span>
+                </div>
+                <div class="spacing-item">
+                    <div class="spacing-box" style="width:80px; height:80px;"></div>
+                    <span class="spacing-label">5x<br>80px</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" id="radius">
+            <h2 class="ds-section-title">Border Radius</h2>
+            <p class="ds-section-subtitle">Dos niveles de redondeo definidos como tokens.</p>
+
+            <div class="radius-grid">
+                <div class="radius-item">
+                    <div class="radius-box" style="border-radius: var(--border-radius);"></div>
+                    <span class="radius-label">--border-radius<br>12px</span>
+                </div>
+                <div class="radius-item">
+                    <div class="radius-box" style="border-radius: var(--border-radius-lg);"></div>
+                    <span class="radius-label">--border-radius-lg<br>24px</span>
+                </div>
+                <div class="radius-item">
+                    <div class="radius-box" style="border-radius: 50%;"></div>
+                    <span class="radius-label">50%<br>Circle</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" id="buttons">
+            <h2 class="ds-section-title">Buttons</h2>
+            <p class="ds-section-subtitle">Variantes de botones disponibles en el proyecto.</p>
+
+            <div class="component-row">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-outline">Outline Button</button>
+                <button class="btn btn-ghost">Ghost Button</button>
+                <button class="btn btn-primary" disabled style="opacity:0.5; cursor:not-allowed;">Disabled</button>
+            </div>
+        </section>
+
+        <section class="ds-section" id="inputs">
+            <h2 class="ds-section-title">Form Inputs</h2>
+            <p class="ds-section-subtitle">Estados de los campos de formulario: default, focus, error y success.</p>
+
+            <div class="form-demo">
+                <div class="form-group">
+                    <label>Default</label>
+                    <input type="text" placeholder="Ej. Ana Gómez">
+                </div>
+                <div class="form-group">
+                    <label>Focus (click para ver)</label>
+                    <input type="email" placeholder="ana@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label>Error State</label>
+                    <input type="text" class="input-error" value="123">
+                    <span class="error-note">Ingresa un nombre válido (solo letras, mín. 3)</span>
+                </div>
+                <div class="form-group">
+                    <label>Success State</label>
+                    <input type="text" class="input-success" value="Ana Gomez">
+                </div>
+                <div class="form-group">
+                    <label>Select</label>
+                    <select>
+                        <option value="">Selecciona un destino</option>
+                        <option value="santorini">Santorini, Grecia</option>
+                        <option value="bali">Bali, Indonesia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+            </div>
+        </section>
+
+        <section class="ds-section" id="cards">
+            <h2 class="ds-section-title">Cards</h2>
+            <p class="ds-section-subtitle">Tarjetas de caracteristicas usadas en la seccion de destinos.</p>
+
+            <div class="card-demo">
+                <article class="feature-card">
+                    <div class="feature-icon">1</div>
+                    <h3>Rutas Unicas</h3>
+                    <p>Curamos cada destino con precision para una experiencia inigualable.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">2</div>
+                    <h3>Soporte Premium</h3>
+                    <p>Asistencia dedicada en tiempo real durante tu aventura.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">3</div>
+                    <h3>Precios Claros</h3>
+                    <p>Transparencia total. Sin costos ocultos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="ds-section" id="badges">
+            <h2 class="ds-section-title">Badges</h2>
+            <p class="ds-section-subtitle">Elementos de etiqueta usados para destacar estados o categorias.</p>
+
+            <div class="component-row">
+                <span class="badge badge-primary">Nuevos destinos 2026</span>
+                <span class="badge badge-success">Disponible</span>
+                <span class="badge badge-error">Agotado</span>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

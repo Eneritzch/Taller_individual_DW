@@ -64,7 +64,9 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 .logo {
@@ -81,7 +83,7 @@ ul {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 6px;
 }
 
 .nav-links a:not(.btn) {
@@ -96,8 +98,8 @@ ul {
 
 .hero {
     position: relative;
-    padding: 60px 0;
-    min-height: calc(100vh - 80px);
+    padding: 40px 0;
+    min-height: auto;
     display: flex;
     align-items: center;
     background-color: var(--color-hero-bg);
@@ -143,8 +145,8 @@ ul {
 }
 
 .hero-content h1 {
-    font-size: 2.8rem;
-    line-height: 1.15;
+    font-size: 2.2rem;
+    line-height: 1.1;
     margin-bottom: 20px;
     color: var(--color-text-main);
     letter-spacing: -1px;
@@ -303,6 +305,19 @@ ul {
     width: 100%;
 }
 
+.btn-ghost-ds {
+    background: transparent;
+    color: var(--color-text-light);
+    border: none;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+}
+
+.btn-ghost-ds:hover {
+    background-color: var(--color-hero-bg);
+    color: var(--color-primary);
+}
+
 .success-message {
     margin-top: 20px;
     padding: 15px;
@@ -389,12 +404,23 @@ ul {
 }
 
 @media (min-width: 768px) {
+    .nav {
+        height: 80px;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
     .logo {
         font-size: 1.5rem;
     }
 
     .nav-links {
         gap: 30px;
+    }
+
+    .btn-ghost-ds {
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 
     .btn {
@@ -412,6 +438,11 @@ ul {
         flex: 1;
         text-align: left;
         padding-right: 50px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 80px);
+        padding: 60px 0;
     }
 
     .hero-content h1 {
